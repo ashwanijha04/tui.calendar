@@ -41,6 +41,7 @@ function hexToRGBA(hex) {
     return rgba;
 }
 
+
 (function() {
     var calendar;
     var id = 0;
@@ -48,17 +49,27 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'My Calendar';
+    calendar.name = 'Working';
     calendar.color = '#ffffff';
-    calendar.bgColor = '#9e5fff';
-    calendar.dragBgColor = '#9e5fff';
-    calendar.borderColor = '#9e5fff';
+    calendar.bgColor = '#1fab89';
+    calendar.dragBgColor = '#1fab89';
+    calendar.borderColor = '#1fab89';
     addCalendar(calendar);
 
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Company';
+    calendar.name = 'Working(7AM)';
+    calendar.color = '#ffffff';
+    calendar.bgColor = '#17b978';
+    calendar.dragBgColor = '#17b978';
+    calendar.borderColor = '#17b978';
+    addCalendar(calendar);
+
+    calendar = new CalendarInfo();
+    id += 1;
+    calendar.id = String(id);
+    calendar.name = 'Work Off';
     calendar.color = '#ffffff';
     calendar.bgColor = '#00a9ff';
     calendar.dragBgColor = '#00a9ff';
@@ -68,60 +79,20 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Family';
+    calendar.name = 'Planned Leave';
     calendar.color = '#ffffff';
-    calendar.bgColor = '#ff5583';
-    calendar.dragBgColor = '#ff5583';
-    calendar.borderColor = '#ff5583';
+    calendar.bgColor = '#ffbd39';
+    calendar.dragBgColor = '#ffbd39';
+    calendar.borderColor = '#ffbd39';
     addCalendar(calendar);
 
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Friend';
+    calendar.name = 'Unplanned Leave';
     calendar.color = '#ffffff';
-    calendar.bgColor = '#03bd9e';
-    calendar.dragBgColor = '#03bd9e';
-    calendar.borderColor = '#03bd9e';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'Travel';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#bbdc00';
-    calendar.dragBgColor = '#bbdc00';
-    calendar.borderColor = '#bbdc00';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'etc';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#9d9d9d';
-    calendar.dragBgColor = '#9d9d9d';
-    calendar.borderColor = '#9d9d9d';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'Birthdays';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#ffbb3b';
-    calendar.dragBgColor = '#ffbb3b';
-    calendar.borderColor = '#ffbb3b';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'National Holidays';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#ff4040';
-    calendar.dragBgColor = '#ff4040';
-    calendar.borderColor = '#ff4040';
+    calendar.bgColor = '#e23e57';
+    calendar.dragBgColor = '#e23e57';
+    calendar.borderColor = '#e23e57';
     addCalendar(calendar);
 })();

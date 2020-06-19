@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>TOAST UI Calendar App DEMO</title>
+    <title>LeavePlanner</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css">
     <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css">
@@ -12,14 +12,12 @@
 </head>
 <body>
     <div id="top">
-        <a href="https://github.com/nhn/tui.calendar">
-            <img src="./images/img-bi.png" srcset="./images/img-bi@2x.png 2x,./images/img-bi@3x.png 3x">
-        </a>
+
     </div>
     <div id="lnb">
         <div class="lnb-new-schedule">
             <button id="btn-new-schedule" type="button" class="btn btn-default btn-block lnb-new-schedule-btn" data-toggle="modal">
-                New schedule</button>
+                Take a leave</button>
         </div>
         <div id="lnb-calendars" class="lnb-calendars">
             <div>
@@ -35,7 +33,7 @@
             </div>
         </div>
         <div class="lnb-footer">
-            © NHN Corp.
+            © AWS PS Deployment.
         </div>
     </div>
     <div id="right">
@@ -47,52 +45,7 @@
                     <span id="calendarTypeName">Dropdown</span>&nbsp;
                     <i class="calendar-icon tui-full-calendar-dropdown-arrow"></i>
                 </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu-calendarType">
-                    <li role="presentation">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-daily">
-                            <i class="calendar-icon ic_view_day"></i>Daily
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weekly">
-                            <i class="calendar-icon ic_view_week"></i>Weekly
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-monthly">
-                            <i class="calendar-icon ic_view_month"></i>Month
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks2">
-                            <i class="calendar-icon ic_view_week"></i>2 weeks
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks3">
-                            <i class="calendar-icon ic_view_week"></i>3 weeks
-                        </a>
-                    </li>
-                    <li role="presentation" class="dropdown-divider"></li>
-                    <li role="presentation">
-                        <a role="menuitem" data-action="toggle-workweek">
-                            <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-workweek" checked>
-                            <span class="checkbox-title"></span>Show weekends
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" data-action="toggle-start-day-1">
-                            <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-start-day-1">
-                            <span class="checkbox-title"></span>Start Week on Monday
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" data-action="toggle-narrow-weekend">
-                            <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-narrow-weekend">
-                            <span class="checkbox-title"></span>Narrower than weekdays
-                        </a>
-                    </li>
-                </ul>
+
             </span>
             <span id="menu-navi">
                 <button type="button" class="btn btn-default btn-sm move-today" data-action="move-today">Today</button>
